@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Londres a tu gusto | Tu viaje a Londres, diseñado para ti</title>
+<meta name="description" content="Asesoría y planificación personalizada de viajes a Londres, por alguien que ha vivido allí. Sin trampas turísticas ni itinerarios genéricos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{--bg:#F8F9FA;--ink:#1B263B;--muted:#4d5870;--card:#ffffff;--line:#dfe3ea;--navy:#1B263B;--brick:#D64045;--cream:#F8F9FA;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101826;--ink:#F8F9FA;--muted:#b4bccb;--card:#1B263B;--line:#2e3a52}}
+:root[data-theme="dark"]{--bg:#101826;--ink:#F8F9FA;--muted:#b4bccb;--card:#1B263B;--line:#2e3a52}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Figtree',system-ui,sans-serif;font-size:1.0625rem;line-height:1.65}
+h1,h2,h3{font-family:'Bricolage Grotesque','Figtree',system-ui,sans-serif;line-height:1.08;letter-spacing:-.02em}
+.btn{display:inline-block;background:var(--brick);color:#fff;font-weight:600;padding:.9rem 1.6rem;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{background:#bf3338;transform:translateY(-1px)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--brick);outline-offset:3px}
+.field{width:100%;background:var(--bg);color:var(--ink);border:1.5px solid var(--line);border-radius:.75rem;padding:.8rem 1rem}
+.field:focus{border-color:var(--brick)}
+.opt input{position:absolute;opacity:0}
+.opt span{display:block;border:1.5px solid var(--line);border-radius:.75rem;padding:.7rem 1rem;cursor:pointer;background:var(--bg)}
+.opt input:checked+span{border-color:var(--brick);background:var(--brick);color:#fff}
+.opt input:focus-visible+span{outline:3px solid var(--brick);outline-offset:2px}
+.route{border-left:3px solid var(--brick)}
+.route li{position:relative;padding-left:1.4rem}
+.route li::before{content:"";position:absolute;left:-11px;top:.45rem;width:19px;height:19px;border-radius:50%;background:var(--navy);border:4px solid var(--brick)}
+@keyframes draw{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0)}}
+.route{animation:draw 1.6s ease-out both}
+@media (prefers-reduced-motion:reduce){.route{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="text-[color:var(--cream)]" style="background:var(--navy)">
+  <nav class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
+    <a href="#" class="font-extrabold text-xl" style="font-family:'Bricolage Grotesque',sans-serif">Londres a tu gusto</a>
+    <div class="hidden sm:flex gap-7 text-sm">
+      <a href="#sobre-mi" class="hover:underline">Sobre mí</a>
+      <a href="#servicios" class="hover:underline">Servicios</a>
+      <a href="#como-funciona" class="hover:underline">Cómo funciona</a>
+    </div>
+    <a href="#formulario" class="btn !py-2 !px-4 text-sm">Empezar</a>
+  </nav>
+  <div class="max-w-6xl mx-auto px-5 pt-10 pb-20 md:pb-28 grid md:grid-cols-5 gap-12 items-center">
+    <div class="md:col-span-3">
+      <h1 class="text-5xl sm:text-6xl font-extrabold">Londres, pero a tu manera. Sin colas inútiles ni itinerarios de folleto.</h1>
+      <p class="mt-6 text-lg max-w-xl text-[#d5dbe6]">Planifico tu viaje a Londres con el criterio de alguien que ha vivido allí: barrios con alma, planes que encajan contigo y cero tiempo perdido en trampas para turistas.</p>
+      <div class="mt-9 flex flex-wrap items-center gap-5">
+        <a href="#formulario" class="btn text-lg">Quiero mi plan a medida</a>
+        <a href="#como-funciona" class="underline underline-offset-4">Ver cómo funciona</a>
+      </div>
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-sm text-[#b9c2d3] mb-4">Un día de ejemplo, diseñado para ti</p>
+      <ul class="route list-none space-y-6 ml-3">
+        <li><strong class="block">Desayuno en Borough Market</strong><span class="text-[#b9c2d3] text-base">Antes de que lleguen los grupos.</span></li>
+        <li><strong class="block">Paseo por el Támesis hasta Tate Modern</strong><span class="text-[#b9c2d3] text-base">Arte gratis y vistas sin pagar entrada.</span></li>
+        <li><strong class="block">Tarde en Soho y Covent Garden</strong><span class="text-[#b9c2d3] text-base">Calles pequeñas, librerías y té.</span></li>
+        <li><strong class="block">Cena en un pub con historia</strong><span class="text-[#b9c2d3] text-base">Donde cenan los londinenses.</span></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-5 gap-12">
+  <div class="md:col-span-2">
+    <h2 class="text-4xl sm:text-5xl font-extrabold">Viví en Londres. Ahora te la enseño por dentro.</h2>
+  </div>
+  <div class="md:col-span-3 space-y-5 max-w-xl" style="color:var(--muted)">
+    <p>En 2019 me mudé a Londres y la ciudad me cambió la forma de viajar. Aprendí qué metro evitar a las ocho de la mañana, qué mercado merece la pena un sábado y qué pub tiene el mejor Sunday roast sin ser un cartel para turistas.</p>
+    <p>Desde entonces, cada vez que un amigo viajaba a Londres me pedía lo mismo: <strong style="color:var(--ink)">“¿Qué hago y qué me ahorro?”</strong> Londres a tu gusto nace de ahí: pasar ese consejo de amigo a todo el que quiera un viaje con sentido.</p>
+    <p>Yo no vendo vuelos, hoteles ni entradas. Te doy el plan y tú reservas lo que quieras, donde quieras, al mejor precio.</p>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-20 md:py-28" style="background:var(--card)">
+  <div class="max-w-6xl mx-auto px-5">
+    <h2 class="text-4xl sm:text-5xl font-extrabold max-w-2xl">Elige cuánta ayuda necesitas</h2>
+    <p class="mt-4 max-w-xl" style="color:var(--muted)">Tanto si solo te falta un empujón como si quieres el viaje resuelto de principio a fin.</p>
+    <div class="mt-12 grid md:grid-cols-2 gap-8">
+      <article class="rounded-3xl p-8 border-2" style="border-color:var(--line);background:var(--bg)">
+        <h3 class="text-3xl font-bold">Asesoría Express 1 a 1</h3>
+        <p class="mt-3" style="color:var(--muted)">Una videollamada cercana y sin prisa para dejar claras todas tus dudas.</p>
+        <ul class="mt-5 space-y-2">
+          <li>Qué barrio elegir para alojarte</li>
+          <li>Transporte y qué pase te conviene</li>
+          <li>Presupuesto realista del viaje</li>
+          <li>Restaurantes y planes que sí merecen la pena</li>
+        </ul>
+        <p class="mt-5 font-semibold">Ideal si ya tienes parte del viaje montada.</p>
+        <a href="#formulario" data-servicio="charla" class="btn mt-7">Quiero resolver mis dudas</a>
+      </article>
+      <article class="rounded-3xl p-8" style="background:var(--navy);color:var(--cream)">
+        <h3 class="text-3xl font-bold">Tu viaje diseñado 100% a medida</h3>
+        <p class="mt-3 text-[#d5dbe6]">Un itinerario completo, día a día, ajustado a tu presupuesto, tus gustos y tu ritmo.</p>
+        <ul class="mt-5 space-y-2">
+          <li>Plan por días con horarios y rutas</li>
+          <li>Sitios elegidos para ti, no para todos</li>
+          <li>Consejos de reserva y de ahorro</li>
+          <li>Todo listo para que solo disfrutes</li>
+        </ul>
+        <p class="mt-5 font-semibold">Ideal si quieres olvidarte de planificar.</p>
+        <a href="#formulario" data-servicio="itinerario" class="btn mt-7">Quiero mi itinerario</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como-funciona" class="max-w-6xl mx-auto px-5 py-20 md:py-28">
+  <h2 class="text-4xl sm:text-5xl font-extrabold max-w-2xl">Así de sencillo, en tres pasos</h2>
+  <ol class="mt-12 grid md:grid-cols-3 gap-10 list-none">
+    <li><span class="text-5xl font-extrabold" style="color:var(--brick);font-family:'Bricolage Grotesque',sans-serif">1</span><h3 class="mt-2 text-2xl font-bold">Rellenas el formulario</h3><p class="mt-2" style="color:var(--muted)">Cuéntame cuándo viajas, con quién y qué te apetece. Te lleva dos minutos.</p></li>
+    <li><span class="text-5xl font-extrabold" style="color:var(--brick);font-family:'Bricolage Grotesque',sans-serif">2</span><h3 class="mt-2 text-2xl font-bold">Hablamos o diseño tu itinerario</h3><p class="mt-2" style="color:var(--muted)">Te escribo para concretar y, según el servicio, quedamos en videollamada o preparo tu plan.</p></li>
+    <li><span class="text-5xl font-extrabold" style="color:var(--brick);font-family:'Bricolage Grotesque',sans-serif">3</span><h3 class="mt-2 text-2xl font-bold">Disfrutas de Londres a tu ritmo</h3><p class="mt-2" style="color:var(--muted)">Reservas lo que quieras y llegas con el viaje resuelto. Solo queda pasarlo bien.</p></li>
+  </ol>
+</section>
+
+<!-- FORMULARIO -->
+<section id="formulario" class="py-20 md:py-28" style="background:var(--card)">
+  <div class="max-w-2xl mx-auto px-5">
+    <h2 class="text-4xl sm:text-5xl font-extrabold">Cuéntame cómo quieres tu Londres</h2>
+    <p class="mt-4" style="color:var(--muted)">Respondo personalmente a cada solicitud. Sin compromiso.</p>
+    <form id="form" class="mt-10 space-y-7" novalidate>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div><label for="nombre" class="font-semibold">Nombre</label><input id="nombre" name="nombre" required autocomplete="name" class="field mt-1"></div>
+        <div><label for="contacto" class="font-semibold">Email o WhatsApp</label><input id="contacto" name="contacto" required class="field mt-1"></div>
+      </div>
+      <div><label for="fechas" class="font-semibold">Fechas aproximadas del viaje</label><input id="fechas" name="fechas" placeholder="Ej.: finales de marzo, 5 días" class="field mt-1"></div>
+      <fieldset><legend class="font-semibold mb-2">¿Con quién viajas?</legend>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <label class="opt relative"><input type="radio" name="viajeros" value="Solo/a" required><span>Solo/a</span></label>
+          <label class="opt relative"><input type="radio" name="viajeros" value="En pareja"><span>En pareja</span></label>
+          <label class="opt relative"><input type="radio" name="viajeros" value="En familia"><span>En familia</span></label>
+          <label class="opt relative"><input type="radio" name="viajeros" value="Con amigos"><span>Con amigos</span></label>
+        </div>
+      </fieldset>
+      <fieldset><legend class="font-semibold mb-2">¿Qué servicio buscas?</legend>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <label class="opt relative"><input type="radio" name="servicio" value="Charla y dudas (1 a 1)" id="s-charla" required><span>Charla para resolver dudas</span></label>
+          <label class="opt relative"><input type="radio" name="servicio" value="Itinerario completo a medida" id="s-itinerario"><span>Itinerario completo a medida</span></label>
+        </div>
+      </fieldset>
+      <div><label for="experiencia" class="font-semibold">¿Qué experiencia buscas en Londres?</label><textarea id="experiencia" name="experiencia" rows="4" placeholder="Gustos, ritmo, presupuesto, si es tu primera vez..." class="field mt-1"></textarea></div>
+      <label class="flex gap-3 items-start text-sm" style="color:var(--muted)"><input type="checkbox" id="rgpd" required class="mt-1 accent-[#D64045]"><span>Acepto que uses estos datos para responder a mi solicitud. Más información en el <a href="#aviso-legal" class="underline">aviso legal</a>.</span></label>
+      <p id="error" class="hidden font-semibold" style="color:var(--brick)" role="alert"></p>
+      <button type="submit" class="btn text-lg w-full sm:w-auto">Enviar mi solicitud</button>
+      <p id="ok" class="hidden font-semibold" role="status">Se abrirá tu correo con la solicitud lista para enviar. ¡Gracias!</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="text-[color:var(--cream)] py-14" style="background:var(--navy)">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-3 gap-10">
+    <div><p class="font-extrabold text-xl" style="font-family:'Bricolage Grotesque',sans-serif">Londres a tu gusto</p><p class="mt-2 text-[#b9c2d3] text-base">Viajes a Londres con un plan hecho para ti.</p></div>
+    <div><p class="font-semibold">Contacto</p><p class="mt-2 text-[#b9c2d3] text-base"><a href="mailto:hola@londresatugusto.com" class="underline">hola@londresatugusto.com</a><br>WhatsApp: +34 000 000 000</p></div>
+    <div><p class="font-semibold">Sígueme</p><p class="mt-2 text-base"><a href="#" class="underline mr-4">Instagram</a><a href="#" class="underline mr-4">TikTok</a><a href="#" class="underline">YouTube</a></p></div>
+  </div>
+  <div id="aviso-legal" class="max-w-6xl mx-auto px-5 mt-10 pt-6 border-t border-white/20 text-sm text-[#b9c2d3]">
+    <p>© 2026 Londres a tu gusto. Servicio de asesoría y planificación: no incluye la venta ni la reserva de vuelos, alojamientos o entradas. <a href="#" class="underline">Aviso legal</a> · <a href="#" class="underline">Privacidad</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-servicio]').forEach(function(a){
+  a.addEventListener('click',function(){var el=document.getElementById(a.dataset.servicio==='charla'?'s-charla':'s-itinerario');if(el)el.checked=true;});
+});
+document.getElementById('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target,d=new FormData(f),err=document.getElementById('error'),ok=document.getElementById('ok');
+  ok.classList.add('hidden');
+  if(!d.get('nombre')||!d.get('contacto')||!d.get('viajeros')||!d.get('servicio')||!f.rgpd.checked){
+    err.textContent='Falta algo: completa tu nombre, un contacto, con quién viajas, el servicio y acepta el tratamiento de datos.';
+    err.classList.remove('hidden');return;
+  }
+  err.classList.add('hidden');
+  var body='Nombre: '+d.get('nombre')+'\nContacto: '+d.get('contacto')+'\nFechas: '+(d.get('fechas')||'-')+'\nViajo: '+d.get('viajeros')+'\nServicio: '+d.get('servicio')+'\nExperiencia buscada: '+(d.get('experiencia')||'-');
+  window.location.href='mailto:hola@londresatugusto.com?subject='+encodeURIComponent('Solicitud Londres a tu gusto')+'&body='+encodeURIComponent(body);
+  ok.classList.remove('hidden');
+});
+</script>
+</body>
+</html>
